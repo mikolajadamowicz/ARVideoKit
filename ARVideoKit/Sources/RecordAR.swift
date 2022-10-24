@@ -67,6 +67,11 @@ import PhotosUI
      An object that allow customizing the AR content mode. Default is `.auto`.
      */
     @objc public var contentMode: ARFrameMode = .auto
+    
+    /**
+     An object that allow customizing the AR capture size.
+     */
+    public var videoSize: VideoSettings = VideoSettings()
     /**
      A boolean that enables or disables AR content rendering before recording for image & video processing. Default is `true`.
      */
@@ -281,7 +286,7 @@ import PhotosUI
         
         onlyRenderWhileRec = onlyRenderWhileRecording
         
-        renderer = RenderAR(view, renderer: renderEngine, contentMode: contentMode)
+        renderer = RenderAR(view, renderer: renderEngine, contentMode: contentMode, videoSettings: videoSize)
 
         NotificationCenter.default.addObserver(self, selector: #selector(appWillEnterBackground), name: UIApplication.willResignActiveNotification, object: nil)
     }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B466A8B82279E34C00BD7070 /* WeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466A8B72279E34C00BD7070 /* WeakProxy.swift */; };
+		DD62A1FF29070A7600165D4E /* VideoSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD62A1FE29070A7600165D4E /* VideoSettings.swift */; };
 		FB2E36891FAE29C00035B8D6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FB2E36881FAE29BF0035B8D6 /* LICENSE */; };
 		FB404FFE20D72A190056EA1D /* JPEG.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB404FFD20D72A190056EA1D /* JPEG.swift */; };
 		FBD604DF1FA969DD00EC9804 /* ARVideoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD604DD1FA969DD00EC9804 /* ARVideoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		B466A8B72279E34C00BD7070 /* WeakProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakProxy.swift; sourceTree = "<group>"; };
+		DD62A1FE29070A7600165D4E /* VideoSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSettings.swift; sourceTree = "<group>"; };
 		FB2E36881FAE29BF0035B8D6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		FB404FFD20D72A190056EA1D /* JPEG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JPEG.swift; sourceTree = "<group>"; };
 		FBD604DA1FA969DD00EC9804 /* ARVideoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARVideoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B466A8B72279E34C00BD7070 /* WeakProxy.swift */,
+				DD62A1FE29070A7600165D4E /* VideoSettings.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				FBD605121FA96BA100EC9804 /* RecordAR.swift in Sources */,
 				FBE5A5A62002BFCF0025C89F /* RenderAR.swift in Sources */,
 				FBD604FC1FA96B3E00EC9804 /* RecordARDelegate.swift in Sources */,
+				DD62A1FF29070A7600165D4E /* VideoSettings.swift in Sources */,
 				FBD604EF1FA96B2700EC9804 /* ARInputViewOptions.swift in Sources */,
 				FBD6050B1FA96B6B00EC9804 /* PHLivePhotoPlus.swift in Sources */,
 			);

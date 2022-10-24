@@ -14,11 +14,13 @@ struct RenderAR {
     private var view: Any?
     private var renderEngine: SCNRenderer!
     var ARcontentMode: ARFrameMode!
+    var videoSettings: VideoSettings!
     
-    init(_ ARview: Any?, renderer: SCNRenderer, contentMode: ARFrameMode) {
+    init(_ ARview: Any?, renderer: SCNRenderer, contentMode: ARFrameMode, videoSettings: VideoSettings) {
         view = ARview
         renderEngine = renderer
         ARcontentMode = contentMode
+        self.videoSettings = videoSettings
     }
     
     let pixelsQueue = DispatchQueue(label: "com.ahmedbekhit.PixelsQueue", attributes: .concurrent)
@@ -61,6 +63,9 @@ struct RenderAR {
                 let targetSize = AVMakeRect(aspectRatio: viewSize, insideRect: CGRect(x: 0, y: 0, width: bufferWidth, height: bufferHeight)).size
                 width = Int(targetSize.width)
                 height = Int(targetSize.height)
+            case .custom:
+                width = videoSettings.width
+                height = videoSettings.height
             default:
                 if UIScreen.main.isNotch {
                     width = Int(UIScreen.main.nativeBounds.width)

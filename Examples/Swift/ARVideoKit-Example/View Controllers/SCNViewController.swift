@@ -57,7 +57,8 @@ class SCNViewController: UIViewController, ARSCNViewDelegate, RenderARDelegate, 
         recorder?.onlyRenderWhileRecording = false
         
         // Configure ARKit content mode. Default is .auto
-        recorder?.contentMode = .aspectFill
+        recorder?.contentMode = .custom
+        recorder?.videoSize = VideoSettings()
         
         //record or photo add environment light rendering, Default is false
         recorder?.enableAdjustEnvironmentLighting = true
