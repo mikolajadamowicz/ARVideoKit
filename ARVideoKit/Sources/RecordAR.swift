@@ -730,6 +730,7 @@ import PhotosUI
     */
     @objc func prepare(_ configuration: ARConfiguration? = nil) {
         renderer.ARcontentMode = contentMode
+        renderer.videoSettings = videoSize
         onlyRenderWhileRec = onlyRenderWhileRecording
         if let view = view as? ARSCNView {
             UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
